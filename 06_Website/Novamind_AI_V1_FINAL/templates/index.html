@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Novamind AI</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+🧠 <span>Novamind AI</span>
+
+</div>
+
+<ul class="menu">
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#chat">AI Chat</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<span class="tag">
+
+🚀 Next Generation AI Assistant
+
+</span>
+
+<h1>
+
+Think Beyond.<br>
+
+Build Smarter.
+
+</h1>
+
+<p>
+
+Novamind AI is your intelligent AI assistant powered by
+Google Gemini.
+
+Learn Programming, solve assignments,
+write code, and boost your productivity.
+
+</p>
+
+<div class="buttons">
+
+<button class="btn1"
+onclick="document.getElementById('chat').scrollIntoView({behavior:'smooth'})">
+
+🚀 Start Chat
+
+</button>
+
+<button class="btn2"
+onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+
+✨ Explore
+
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="glass-card">
+
+<h2>
+
+⚡ Gemini 2.5 Flash
+
+</h2>
+
+<p>
+
+Fast • Smart • Accurate
+
+</p>
+
+<div class="stats">
+
+<div>
+
+<h3>24/7</h3>
+
+<span>Online</span>
+
+</div>
+
+<div>
+
+<h3>AI</h3>
+
+<span>Powered</span>
+
+</div>
+
+<div>
+
+<h3>Fast</h3>
+
+<span>Response</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= FEATURES ================= -->
+
+<section class="features" id="features">
+
+    <div class="section-title">
+
+        <h2>Why Choose Novamind AI?</h2>
+
+        <p>
+            Powerful AI features designed for students, developers and creators.
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="icon">🤖</div>
+
+            <h3>AI Chat</h3>
+
+            <p>
+                Ask anything and get intelligent answers powered by Google Gemini.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon">💻</div>
+
+            <h3>Programming Help</h3>
+
+            <p>
+                Learn Python, Java, C, HTML, CSS, JavaScript and more.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon">📚</div>
+
+            <h3>Study Assistant</h3>
+
+            <p>
+                Notes, assignments, explanations and exam preparation in one place.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon">⚡</div>
+
+            <h3>Instant Answers</h3>
+
+            <p>
+                Fast AI responses with modern technology and high accuracy.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon">🧠</div>
+
+            <h3>Smart Learning</h3>
+
+            <p>
+                Understand concepts instead of memorizing them with AI guidance.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon">🌐</div>
+
+            <h3>24/7 Available</h3>
+
+            <p>
+                Your personal AI assistant is always ready to help anytime.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= AI CHAT ================= -->
+
+<section class="chat-section" id="chat">
+
+    <div class="section-title">
+
+        <h2>💬 Chat with Novamind AI</h2>
+
+        <p>Your intelligent AI assistant powered by Google Gemini.</p>
+
+    </div>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+
+        <div class="chat-header">
+
+            <div class="ai-status">
+
+                <div class="online-dot"></div>
+
+                <div>
+
+                    <h3>Novamind AI</h3>
+
+                    <span>🟢 Online • Gemini 2.5 Flash</span>
+
+                </div>
+
+            </div>
+
+            <button id="clearChat">
+                🗑️ Clear Chat
+            </button>
+
+        </div>
+
+        <!-- Chat Messages -->
+
+        <div id="chatBox" class="chat-box">
+
+            <div class="bot-message">
+
+                <div class="avatar">
+                    🤖
+                </div>
+
+                <div class="message-content">
+
+                    <b>Hello! I am Novamind AI.</b>
+
+                    <br><br>
+
+                    I can help you with:
+
+                    <ul>
+
+                        <li>💻 Programming</li>
+
+                        <li>🤖 Artificial Intelligence</li>
+
+                        <li>📚 College Studies</li>
+
+                        <li>🌐 Web Development</li>
+
+                        <li>🐍 Python</li>
+
+                        <li>⚡ Coding Problems</li>
+
+                    </ul>
+
+                    Ask me anything!
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Input -->
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Ask anything...">
+
+            <button id="micBtn">
+                🎤
+            </button>
+
+            <button id="sendBtn">
+                🚀 Send
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <h2>About Novamind AI</h2>
+
+        <p>
+            Novamind AI is an intelligent assistant built to help students,
+            developers and professionals solve problems, learn faster and
+            increase productivity using Google Gemini AI.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+
+        <h2>Contact</h2>
+
+        <p>
+            Have feedback or suggestions? We'd love to hear from you.
+        </p>
+
+    </div>
+
+    <div class="contact-card">
+
+        <h3>📧 Email</h3>
+
+        <p>support@novamindai.com</p>
+
+        <br>
+
+        <h3>🌐 Website</h3>
+
+        <p>www.novamindai.com</p>
+
+        <br>
+
+        <h3>⚡ Powered By</h3>
+
+        <p>Google Gemini AI</p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>🧠 Novamind AI</h2>
+
+        <p>
+            Think Beyond. Build Smarter.
+        </p>
+
+        <p class="copyright">
+
+            © 2026 Novamind AI. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
